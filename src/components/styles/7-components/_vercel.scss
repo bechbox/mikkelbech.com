@@ -1,5 +1,4 @@
 body {
-  background-color: #121212;
   --app-bg: var(--gray1);
   --lowContrast: #000;
   --highContrast: #fff;
@@ -42,17 +41,15 @@ body {
 }
 
 .vercel {
-  height: 100%;
+  width: 100%;
   left: 0;
   opacity: 1;
   position: fixed;
   top: 0;
   transition: opacity 0.3s ease-out;
-  width: 100%;
-  z-index: 1000000;
-  display: none;
 
   [cmdk-root] {
+    z-index: 1000000;
     margin: 100px auto 0 auto;
     max-width: 640px;
     width: 100%;

@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Command } from "cmdk"
+import { navigate } from "gatsby"
 
 const CommandMenu = ({ element }) => {
   const [open, setOpen] = React.useState(false)
@@ -29,14 +30,20 @@ const CommandMenu = ({ element }) => {
         <Command.List>
           <Command.Empty>No results found.</Command.Empty>
 
-          <Command.Group heading="Letters">
-            <Command.Item>a</Command.Item>
-            <Command.Item>b</Command.Item>
+          <Command.Group heading="Sections">
+            <Command.Item onSelect={() => navigate("/")}>
+              Introduction
+            </Command.Item>
+            <Command.Item onSelect={() => navigate("/startups")}>
+              Startups
+            </Command.Item>
             <Command.Separator />
             <Command.Item>c</Command.Item>
           </Command.Group>
 
-          <Command.Item>Apple</Command.Item>
+          <Command.Item onSelect={value => console.log("Selected", value)}>
+            Contact
+          </Command.Item>
         </Command.List>
       </Command.Dialog>
     </div>
