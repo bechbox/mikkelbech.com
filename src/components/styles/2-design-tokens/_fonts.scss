@@ -1,0 +1,29 @@
+$heading-font: "Inter Variable", sans-serif !important;
+$body-font: "Inter Variable", sans-serif !important;
+
+@mixin font-header() {
+  font-family: $heading-font;
+  font-weight: 500;
+}
+
+@mixin font-header-bold() {
+  font-family: $heading-font;
+  font-weight: 600;
+}
+
+@mixin font-body() {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: $body-font;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}

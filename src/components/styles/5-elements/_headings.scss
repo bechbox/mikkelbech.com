@@ -1,0 +1,87 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+// Preconfigure these settings before the @import of this file.
+
+$heading-size-1: 48px !default;
+$heading-size-2: 42px !default;
+$heading-size-3: 28px !default;
+$heading-size-4: 22px !default;
+$heading-size-5: 16px !default;
+$heading-size-6: 16px !default;
+
+$mobile-heading-size-1: 36px !default;
+$mobile-heading-size-2: 32px !default;
+$mobile-heading-size-3: 24px !default;
+$mobile-heading-size-4: 18px !default;
+$mobile-heading-size-5: 14px !default;
+$mobile-heading-size-6: 12px !default;
+
+h1 {
+  @include font-header();
+  @include font-size($heading-size-1);
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  @include text-white();
+
+  @include sm {
+    font-size: $mobile-heading-size-1;
+  }
+}
+h2 {
+  @include font-header();
+  @include font-size($heading-size-2);
+  @include text-white();
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  @include sm {
+    font-size: $mobile-heading-size-2;
+  }
+}
+h3 {
+  @include font-header();
+  @include font-size($heading-size-3);
+  @include text-white();
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  @include sm {
+    font-size: $mobile-heading-size-3;
+  }
+}
+h4 {
+  @include font-header();
+  @include font-size($heading-size-4);
+  @include text-white();
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  @include sm {
+    font-size: $mobile-heading-size-4;
+  }
+}
+h5 {
+  @include font-header();
+  @include font-size($heading-size-5);
+  @include text-white();
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  @include sm {
+    font-size: $mobile-heading-size-5;
+  }
+}
+h6 {
+  @include font-header();
+  @include font-size($heading-size-6);
+  @include text-white();
+  letter-spacing: -0.01em;
+  line-height: 120%;
+  @include sm {
+    font-size: $mobile-heading-size-6;
+  }
+}
+
+.subHeader {
+  @include font-body();
+  font-size: 1.8em;
+  line-height: 1.4em;
+}

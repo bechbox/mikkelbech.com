@@ -1,0 +1,19 @@
+$white: #ffffff;
+$dark: #121212;
+$dark-alt: #191919;
+$dark-stroke: #2d2d2d;
+$lightgrey: #7f7f7f;
+
+$selected-bg: #555555;
+$selected-text: #bebebe;
+
+$lightgrey-filter: invert(53%) sepia(1%) saturate(0%) hue-rotate(55deg)
+  brightness(93%) contrast(89%);
+
+@mixin text-white() {
+  color: $white;
+}
+
+@mixin text() {
+  color: $lightgrey;
+}

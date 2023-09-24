@@ -1,0 +1,10 @@
+.layout {
+  background-color: $dark;
+  height: 200vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  @include font-body();
+  @include text();
+}

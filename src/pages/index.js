@@ -6,115 +6,157 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
-
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
-
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus
+      metus, dictum in tellus imperdiet, laoreet consectetur tortor. Maecenas
+      pellentesque vel enim vitae mollis. Duis maximus vitae nisl eget volutpat.
+      Nunc accumsan, lectus ac tempus tincidunt, nunc purus ultricies odio, nec
+      semper tortor ipsum at metus. Pellentesque habitant morbi tristique
+      senectus et netus et malesuada fames ac turpis egestas. Curabitur sed leo
+      neque. Duis id risus quam. Pellentesque viverra lacus consectetur mollis
+      fringilla. Praesent tortor lectus, consectetur non consectetur non, congue
+      et lacus. Nulla odio justo, iaculis faucibus massa nec, congue aliquam
+      massa. Aenean consectetur, odio auctor iaculis scelerisque, ex diam
+      efficitur nulla, non aliquam eros tortor dictum lacus. Cras euismod augue
+      fermentum sodales varius. Nullam quis odio molestie, lobortis leo ut,
+      sollicitudin quam. Vivamus et viverra metus, ac molestie ligula. Nullam
+      porta risus diam, eget aliquet odio interdum eu. Vestibulum lorem mi,
+      aliquet sed molestie vel, interdum sit amet purus. Sed in dictum felis. In
+      hac habitasse platea dictumst. Fusce nunc felis, posuere non sollicitudin
+      mollis, hendrerit pulvinar enim. Aliquam condimentum lectus mauris. Mauris
+      lacinia nulla sit amet massa euismod, sed tempor mi vestibulum. Aenean ac
+      nibh commodo, finibus justo at, vulputate nunc. Proin ac lectus vulputate,
+      aliquam nisl vitae, posuere odio. Etiam nunc ante, efficitur eget viverra
+      sed, cursus et neque. Proin aliquam odio a arcu scelerisque gravida. Nunc
+      tristique convallis quam, ut venenatis leo posuere sodales. Vivamus
+      fermentum quam lectus, ut interdum metus dictum sit amet. Duis quis ligula
+      vel nulla malesuada laoreet pharetra mattis dolor. Vestibulum elit neque,
+      suscipit in eros eget, malesuada varius eros. Sed sodales elit non aliquam
+      dapibus. Sed vestibulum vel massa non vestibulum. Donec sed neque a elit
+      elementum maximus ut vitae mauris. Maecenas vel sapien ut nunc pharetra
+      ornare. Nullam ut elit purus. Cras luctus neque tortor, quis finibus massa
+      aliquam at. In hac habitasse platea dictumst. Nunc sollicitudin, erat
+      scelerisque eleifend mollis, dui libero volutpat leo, et cursus diam arcu
+      vel est. Morbi tortor neque, auctor et tellus in, pretium vehicula arcu.
+      Nunc malesuada odio dapibus imperdiet molestie. Nunc et scelerisque
+      tortor, quis volutpat libero. Maecenas dapibus condimentum ipsum, ac
+      ornare odio. Nam imperdiet a felis ut malesuada. Donec ut euismod mi, eu
+      congue lectus. Donec eget diam consectetur nisi accumsan dignissim in quis
+      diam. Etiam dictum nibh dictum nulla volutpat rhoncus. Donec id tristique
+      magna. Nunc dapibus tempus nunc, ut pulvinar nunc sollicitudin vitae.
+      Praesent orci justo, pellentesque vitae enim et, fermentum rhoncus nisi.
+      Curabitur viverra dolor nec arcu dignissim, sed convallis elit dapibus.
+      Morbi eget est et tellus tristique egestas. Donec ut facilisis leo, vitae
+      ullamcorper dolor. Proin vulputate augue in mollis sodales. Cras orci mi,
+      mattis sed dolor gravida, hendrerit molestie libero. Nulla vehicula ante
+      mi, malesuada commodo nibh malesuada quis. Sed urna velit, fermentum sed
+      nulla et, pulvinar finibus enim. Donec et vestibulum odio. Fusce in arcu
+      maximus, facilisis turpis sit amet, porta diam. Vestibulum ante ipsum
+      primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam
+      tempus in sapien et consequat. Phasellus sit amet tortor massa. Ut magna
+      quam, pellentesque eu lobortis a, varius euismod purus. Cras tincidunt
+      nisi metus, ut iaculis urna fermentum eget. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Suspendisse risus metus, dictum in tellus
+      imperdiet, laoreet consectetur tortor. Maecenas pellentesque vel enim
+      vitae mollis. Duis maximus vitae nisl eget volutpat. Nunc accumsan, lectus
+      ac tempus tincidunt, nunc purus ultricies odio, nec semper tortor ipsum at
+      metus. Pellentesque habitant morbi tristique senectus et netus et
+      malesuada fames ac turpis egestas. Curabitur sed leo neque. Duis id risus
+      quam. Pellentesque viverra lacus consectetur mollis fringilla. Praesent
+      tortor lectus, consectetur non consectetur non, congue et lacus. Nulla
+      odio justo, iaculis faucibus massa nec, congue aliquam massa. Aenean
+      consectetur, odio auctor iaculis scelerisque, ex diam efficitur nulla, non
+      aliquam eros tortor dictum lacus. Cras euismod augue fermentum sodales
+      varius. Nullam quis odio molestie, lobortis leo ut, sollicitudin quam.
+      Vivamus et viverra metus, ac molestie ligula. Nullam porta risus diam,
+      eget aliquet odio interdum eu. Vestibulum lorem mi, aliquet sed molestie
+      vel, interdum sit amet purus. Sed in dictum felis. In hac habitasse platea
+      dictumst. Fusce nunc felis, posuere non sollicitudin mollis, hendrerit
+      pulvinar enim. Aliquam condimentum lectus mauris. Mauris lacinia nulla sit
+      amet massa euismod, sed tempor mi vestibulum. Aenean ac nibh commodo,
+      finibus justo at, vulputate nunc. Proin ac lectus vulputate, aliquam nisl
+      vitae, posuere odio. Etiam nunc ante, efficitur eget viverra sed, cursus
+      et neque. Proin aliquam odio a arcu scelerisque gravida. Nunc tristique
+      convallis quam, ut venenatis leo posuere sodales. Vivamus fermentum quam
+      lectus, ut interdum metus dictum sit amet. Duis quis ligula vel nulla
+      malesuada laoreet pharetra mattis dolor. Vestibulum elit neque, suscipit
+      in eros eget, malesuada varius eros. Sed sodales elit non aliquam dapibus.
+      Sed vestibulum vel massa non vestibulum. Donec sed neque a elit elementum
+      maximus ut vitae mauris. Maecenas vel sapien ut nunc pharetra ornare.
+      Nullam ut elit purus. Cras luctus neque tortor, quis finibus massa aliquam
+      at. In hac habitasse platea dictumst. Nunc sollicitudin, erat scelerisque
+      eleifend mollis, dui libero volutpat leo, et cursus diam arcu vel est.
+      Morbi tortor neque, auctor et tellus in, pretium vehicula arcu. Nunc
+      malesuada odio dapibus imperdiet molestie. Nunc et scelerisque tortor,
+      quis volutpat libero. Maecenas dapibus condimentum ipsum, ac ornare odio.
+      Nam imperdiet a felis ut malesuada. Donec ut euismod mi, eu congue lectus.
+      Donec eget diam consectetur nisi accumsan dignissim in quis diam. Etiam
+      dictum nibh dictum nulla volutpat rhoncus. Donec id tristique magna. Nunc
+      dapibus tempus nunc, ut pulvinar nunc sollicitudin vitae. Praesent orci
+      justo, pellentesque vitae enim et, fermentum rhoncus nisi. Curabitur
+      viverra dolor nec arcu dignissim, sed convallis elit dapibus. Morbi eget
+      est et tellus tristique egestas. Donec ut facilisis leo, vitae ullamcorper
+      dolor. Proin vulputate augue in mollis sodales. Cras orci mi, mattis sed
+      dolor gravida, hendrerit molestie libero. Nulla vehicula ante mi,
+      malesuada commodo nibh malesuada quis. Sed urna velit, fermentum sed nulla
+      et, pulvinar finibus enim. Donec et vestibulum odio. Fusce in arcu
+      maximus, facilisis turpis sit amet, porta diam. Vestibulum ante ipsum
+      primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam
+      tempus in sapien et consequat. Phasellus sit amet tortor massa. Ut magna
+      quam, pellentesque eu lobortis a, varius euismod purus. Cras tincidunt
+      nisi metus, ut iaculis urna fermentum eget. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Suspendisse risus metus, dictum in tellus
+      imperdiet, laoreet consectetur tortor. Maecenas pellentesque vel enim
+      vitae mollis. Duis maximus vitae nisl eget volutpat. Nunc accumsan, lectus
+      ac tempus tincidunt, nunc purus ultricies odio, nec semper tortor ipsum at
+      metus. Pellentesque habitant morbi tristique senectus et netus et
+      malesuada fames ac turpis egestas. Curabitur sed leo neque. Duis id risus
+      quam. Pellentesque viverra lacus consectetur mollis fringilla. Praesent
+      tortor lectus, consectetur non consectetur non, congue et lacus. Nulla
+      odio justo, iaculis faucibus massa nec, congue aliquam massa. Aenean
+      consectetur, odio auctor iaculis scelerisque, ex diam efficitur nulla, non
+      aliquam eros tortor dictum lacus. Cras euismod augue fermentum sodales
+      varius. Nullam quis odio molestie, lobortis leo ut, sollicitudin quam.
+      Vivamus et viverra metus, ac molestie ligula. Nullam porta risus diam,
+      eget aliquet odio interdum eu. Vestibulum lorem mi, aliquet sed molestie
+      vel, interdum sit amet purus. Sed in dictum felis. In hac habitasse platea
+      dictumst. Fusce nunc felis, posuere non sollicitudin mollis, hendrerit
+      pulvinar enim. Aliquam condimentum lectus mauris. Mauris lacinia nulla sit
+      amet massa euismod, sed tempor mi vestibulum. Aenean ac nibh commodo,
+      finibus justo at, vulputate nunc. Proin ac lectus vulputate, aliquam nisl
+      vitae, posuere odio. Etiam nunc ante, efficitur eget viverra sed, cursus
+      et neque. Proin aliquam odio a arcu scelerisque gravida. Nunc tristique
+      convallis quam, ut venenatis leo posuere sodales. Vivamus fermentum quam
+      lectus, ut interdum metus dictum sit amet. Duis quis ligula vel nulla
+      malesuada laoreet pharetra mattis dolor. Vestibulum elit neque, suscipit
+      in eros eget, malesuada varius eros. Sed sodales elit non aliquam dapibus.
+      Sed vestibulum vel massa non vestibulum. Donec sed neque a elit elementum
+      maximus ut vitae mauris. Maecenas vel sapien ut nunc pharetra ornare.
+      Nullam ut elit purus. Cras luctus neque tortor, quis finibus massa aliquam
+      at. In hac habitasse platea dictumst. Nunc sollicitudin, erat scelerisque
+      eleifend mollis, dui libero volutpat leo, et cursus diam arcu vel est.
+      Morbi tortor neque, auctor et tellus in, pretium vehicula arcu. Nunc
+      malesuada odio dapibus imperdiet molestie. Nunc et scelerisque tortor,
+      quis volutpat libero. Maecenas dapibus condimentum ipsum, ac ornare odio.
+      Nam imperdiet a felis ut malesuada. Donec ut euismod mi, eu congue lectus.
+      Donec eget diam consectetur nisi accumsan dignissim in quis diam. Etiam
+      dictum nibh dictum nulla volutpat rhoncus. Donec id tristique magna. Nunc
+      dapibus tempus nunc, ut pulvinar nunc sollicitudin vitae. Praesent orci
+      justo, pellentesque vitae enim et, fermentum rhoncus nisi. Curabitur
+      viverra dolor nec arcu dignissim, sed convallis elit dapibus. Morbi eget
+      est et tellus tristique egestas. Donec ut facilisis leo, vitae ullamcorper
+      dolor. Proin vulputate augue in mollis sodales. Cras orci mi, mattis sed
+      dolor gravida, hendrerit molestie libero. Nulla vehicula ante mi,
+      malesuada commodo nibh malesuada quis. Sed urna velit, fermentum sed nulla
+      et, pulvinar finibus enim. Donec et vestibulum odio. Fusce in arcu
+      maximus, facilisis turpis sit amet, porta diam. Vestibulum ante ipsum
+      primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam
+      tempus in sapien et consequat. Phasellus sit amet tortor massa. Ut magna
+      quam, pellentesque eu lobortis a, varius euismod purus. Cras tincidunt
+      nisi metus, ut iaculis urna fermentum eget.
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
   </Layout>
 )
 
