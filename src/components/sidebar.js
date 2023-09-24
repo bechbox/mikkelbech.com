@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { navigate } from "gatsby"
 
 import InfoIcon from "../../static/icons/regular/info.svg"
 import FactoryIcon from "../../static/icons/regular/factory.svg"
@@ -13,6 +14,33 @@ import LinkedInIcon from "../../static/icons/regular/linkedin-logo.svg"
 import TwitterIcon from "../../static/icons/regular/twitter-logo.svg"
 
 const Sidebar = ({ selected }) => {
+  const menuItems = [
+    { key: "1", path: "/", icon: InfoIcon, title: "Introduction" },
+    { key: "2", path: "/startups", icon: FactoryIcon, title: "Startups" },
+    {
+      key: "3",
+      path: "/service-design",
+      icon: UsersIcon,
+      title: "Service Design",
+    },
+    { key: "4", path: "/courses", icon: CoursesIcon, title: "Courses" },
+    { key: "5", path: "/thoughts", icon: BulbIcon, title: "Thoughts" },
+    { key: "6", path: "/dev", icon: DevIcon, title: "Dev" },
+    { key: "7", path: "/guitar", icon: GuitarIcon, title: "Guitar" },
+  ]
+  // Sidebar shortcuts
+  React.useEffect(() => {
+    const down = e => {
+      const menuItem = menuItems.find(item => item.key === e.key)
+      if (menuItem) {
+        navigate(menuItem.path)
+      }
+    }
+
+    document.addEventListener("keydown", down)
+    return () => document.removeEventListener("keydown", down)
+  }, [])
+
   return (
     <div className="sidebar">
       <div className="sidebar-header">
@@ -23,104 +51,23 @@ const Sidebar = ({ selected }) => {
         </div>
       </div>
       <div className="sidebar-menu">
-        <a
-          className={`sidebar-menu-item ${
-            selected === "/" ? "menu-selected" : ""
-          }`}
-          href="/"
-        >
-          <div className="menu-item">
-            <div className="menu-icon">
-              <img src={InfoIcon} alt="info icon" />
+        {menuItems.map(item => (
+          <a
+            key={item.key}
+            className={`sidebar-menu-item ${
+              selected === item.path ? "menu-selected" : ""
+            }`}
+            href={item.path}
+          >
+            <div className="menu-item">
+              <div className="menu-icon">
+                <img src={item.icon} alt={`${item.title} icon`} />
+              </div>
+              <div className="menu-title">{item.title}</div>
             </div>
-            <div className="menu-title">Introduction</div>
-          </div>
-          <div className="menu-shortcut">1</div>
-        </a>
-        <a
-          className={`sidebar-menu-item ${
-            selected === "/startups" ? "menu-selected" : ""
-          }`}
-          href="/startups"
-        >
-          <div className="menu-item">
-            <div className="menu-icon">
-              <img src={FactoryIcon} alt="info icon" />
-            </div>
-            <div className="menu-title">Startups</div>
-          </div>
-          <div className="menu-shortcut">2</div>
-        </a>
-        <a
-          className={`sidebar-menu-item ${
-            selected === "/service-design" ? "menu-selected" : ""
-          }`}
-          href="/service-design"
-        >
-          <div className="menu-item">
-            <div className="menu-icon">
-              <img src={UsersIcon} alt="info icon" />
-            </div>
-            <div className="menu-title">Service Design</div>
-          </div>
-          <div className="menu-shortcut">3</div>
-        </a>
-        <a
-          className={`sidebar-menu-item ${
-            selected === "/courses" ? "menu-selected" : ""
-          }`}
-          href="/courses"
-        >
-          <div className="menu-item">
-            <div className="menu-icon">
-              <img src={CoursesIcon} alt="info icon" />
-            </div>
-            <div className="menu-title">Courses</div>
-          </div>
-          <div className="menu-shortcut">4</div>
-        </a>
-        <a
-          className={`sidebar-menu-item ${
-            selected === "/thoughts" ? "menu-selected" : ""
-          }`}
-          href="/thoughts"
-        >
-          <div className="menu-item">
-            <div className="menu-icon">
-              <img src={BulbIcon} alt="info icon" />
-            </div>
-            <div className="menu-title">Thoughts</div>
-          </div>
-          <div className="menu-shortcut">5</div>
-        </a>
-        <a
-          className={`sidebar-menu-item ${
-            selected === "/dev" ? "menu-selected" : ""
-          }`}
-          href="/dev"
-        >
-          <div className="menu-item">
-            <div className="menu-icon">
-              <img src={DevIcon} alt="info icon" />
-            </div>
-            <div className="menu-title">Dev</div>
-          </div>
-          <div className="menu-shortcut">6</div>
-        </a>
-        <a
-          className={`sidebar-menu-item ${
-            selected === "/guitar" ? "menu-selected" : ""
-          }`}
-          href="/guitar"
-        >
-          <div className="menu-item">
-            <div className="menu-icon">
-              <img src={GuitarIcon} alt="info icon" />
-            </div>
-            <div className="menu-title">Guitar</div>
-          </div>
-          <div className="menu-shortcut">7</div>
-        </a>
+            <div className="menu-shortcut">{item.key}</div>
+          </a>
+        ))}
       </div>
     </div>
   )

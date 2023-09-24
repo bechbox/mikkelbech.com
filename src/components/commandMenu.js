@@ -37,11 +37,22 @@ const CommandMenu = ({ element }) => {
             <Command.Item onSelect={() => navigate("/startups")}>
               Startups
             </Command.Item>
-            <Command.Separator />
-            <Command.Item>c</Command.Item>
+            <Command.Item onSelect={() => navigate("/service-design")}>
+              Service Design
+            </Command.Item>
+            <Command.Item onSelect={() => navigate("/courses")}>
+              Courses
+            </Command.Item>
+            <Command.Item onSelect={() => navigate("/thoughts")}>
+              Thoughts
+            </Command.Item>
+            <Command.Item onSelect={() => navigate("/dev")}>Dev</Command.Item>
+            <Command.Item onSelect={() => navigate("/guitar")}>
+              Guitar
+            </Command.Item>
           </Command.Group>
 
-          <Command.Item onSelect={value => console.log("Selected", value)}>
+          <Command.Item onSelect={() => navigate("/contact")}>
             Contact
           </Command.Item>
         </Command.List>
