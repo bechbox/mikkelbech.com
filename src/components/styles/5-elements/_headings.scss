@@ -4,7 +4,7 @@
 
 // Preconfigure these settings before the @import of this file.
 
-$heading-size-1: 48px !default;
+$heading-size-1: 58px !default;
 $heading-size-2: 42px !default;
 $heading-size-3: 28px !default;
 $heading-size-4: 22px !default;
@@ -24,6 +24,7 @@ h1 {
   letter-spacing: -0.01em;
   line-height: 120%;
   @include text-white();
+  font-weight: 600;
 
   @include sm {
     font-size: $mobile-heading-size-1;

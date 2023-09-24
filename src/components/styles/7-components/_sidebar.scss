@@ -8,6 +8,8 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+
+  letter-spacing: 0.02em;
 }
 
 .sidebar-header {
@@ -35,6 +37,7 @@
   font-size: 16px;
   margin: 0;
   padding: 0;
+  letter-spacing: 0;
 }
 
 .sidebar-header-content > p {
@@ -85,6 +88,7 @@ a.sidebar-menu-item {
 .menu-icon {
   width: 24px;
   height: 24px;
+  overflow: hidden;
   filter: $lightgrey-filter;
 }
 

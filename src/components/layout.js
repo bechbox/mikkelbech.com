@@ -14,7 +14,7 @@ import "./styles/main.scss"
 
 import Sidebar from "./sidebar"
 
-const Layout = ({ children }) => {
+const Layout = ({ currentPage, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="layout">
-      <Sidebar />
+      <Sidebar selected={currentPage} />
       <main>{children}</main>
     </div>
   )
