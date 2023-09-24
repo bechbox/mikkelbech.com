@@ -25,7 +25,9 @@ main h1 {
 
 .cv-icon {
   width: 32px;
+  min-width: 32px;
   height: 32px;
+  min-height: 32px;
   overflow: hidden;
   filter: $lightgrey-filter;
 }

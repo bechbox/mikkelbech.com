@@ -11,7 +11,7 @@ import WrenchIcon from "../../static/icons/regular/wrench.svg"
 import CodeIcon from "../../static/icons/regular/code-simple.svg"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout currentPage="/">
     <div>
       <h1>Product. Design. Startup.</h1>
       <div className="subTitle">
