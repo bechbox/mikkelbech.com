@@ -14,7 +14,7 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="sidebar-menu">
-        <div className="sidebar-menu-item">
+        <a className="sidebar-menu-item" href="#">
           <div className="menu-item">
             <div className="menu-icon">
               <img src={InfoIcon} alt="info icon" />
@@ -22,8 +22,8 @@ const Sidebar = () => {
             <div className="menu-title">Introduction</div>
           </div>
           <div className="menu-shortcut">1</div>
-        </div>
-        <div className="sidebar-menu-item menu-selected">
+        </a>
+        <a className="sidebar-menu-item menu-selected" href="#">
           <div className="menu-item">
             <div className="menu-icon">
               <img src={InfoIcon} alt="info icon" />
@@ -31,8 +31,8 @@ const Sidebar = () => {
             <div className="menu-title">Introduction</div>
           </div>
           <div className="menu-shortcut">1</div>
-        </div>
-        <div className="sidebar-menu-item">
+        </a>
+        <a className="sidebar-menu-item" href="#">
           <div className="menu-item">
             <div className="menu-icon">
               <img src={InfoIcon} alt="info icon" />
@@ -40,7 +40,7 @@ const Sidebar = () => {
             <div className="menu-title">Introduction</div>
           </div>
           <div className="menu-shortcut">1</div>
-        </div>
+        </a>
       </div>
     </div>
   )
