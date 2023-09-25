@@ -6,11 +6,15 @@ $card-gap: 24px;
   flex-wrap: wrap;
   gap: $card-gap;
   width: 100%;
+  max-width: 1400px;
+  margin-top: 48px;
 }
 
 .card {
   flex: 0 1 calc(50% - ($card-gap / 2));
   width: calc(50% - ($card-gap / 2));
+  max-width: 505px;
+  min-width: 365px;
   background-color: #333;
   height: 365px;
   border-radius: 12px;
