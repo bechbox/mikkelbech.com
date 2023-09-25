@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Card from "../components/ui/card"
 
 const IndexPage = () => (
   <Layout currentPage="/startups">
@@ -11,6 +12,11 @@ const IndexPage = () => (
       <h1>Startups</h1>
       <div className="subTitle">
         I've co-founded quite a number of companies. Most noteworthy:
+      </div>
+      <div className="cards">
+        <Card />
+        <Card />
+        <Card />
       </div>
     </div>
   </Layout>

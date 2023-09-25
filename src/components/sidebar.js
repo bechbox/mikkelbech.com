@@ -44,7 +44,12 @@ const Sidebar = ({ selected }) => {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <div className="avatar">image</div>
+        <div className="avatar">
+          <img
+            src="/images/mikkelbech_square.jpg"
+            alt="Mikkel Bech, portrait"
+          />
+        </div>
         <div className="sidebar-header-content">
           <h5>Mikkel Bech</h5>
           <p>Design Do'er</p>
@@ -52,12 +57,12 @@ const Sidebar = ({ selected }) => {
       </div>
       <div className="sidebar-menu">
         {menuItems.map(item => (
-          <a
+          <Link
             key={item.key}
             className={`sidebar-menu-item ${
               selected === item.path ? "menu-selected" : ""
             }`}
-            href={item.path}
+            to={item.path}
           >
             <div className="menu-item">
               <div className="menu-icon">
@@ -66,7 +71,7 @@ const Sidebar = ({ selected }) => {
               <div className="menu-title">{item.title}</div>
             </div>
             <div className="menu-shortcut">{item.key}</div>
-          </a>
+          </Link>
         ))}
       </div>
     </div>
