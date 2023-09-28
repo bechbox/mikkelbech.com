@@ -39,7 +39,7 @@ const Sidebar = ({ selected }) => {
 
     document.addEventListener("keydown", down)
     return () => document.removeEventListener("keydown", down)
-  }, [])
+  }, [menuItems])
 
   return (
     <div className="sidebar">
