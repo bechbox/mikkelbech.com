@@ -15,7 +15,7 @@ const StartupPage = () => (
       <div className="cards">
         <Card
           title="Emento"
-          subTitle="Digital Care Guide Platform"
+          subTitle="Digital Care Guide Platform for healthcare"
           image="/images/startups/emento.jpg"
           link="https://emento.dk"
         />
@@ -27,9 +27,21 @@ const StartupPage = () => (
         />
         <Card
           title="Bookbites"
-          subTitle="Reading tool of the future"
+          subTitle="Tool to motivate children to read more"
           image="/images/startups/bookbites.jpg"
           link="https://bookbites.com"
+        />
+        <Card
+          title="Inet-Design"
+          subTitle="Creative Digital Agency"
+          image="/images/startups/inet-design.jpg"
+          link="https://inetdesign.dk/en"
+        />
+        <Card
+          title="BechBox"
+          subTitle="Creative Visual Agency"
+          image="/images/startups/bechbox.jpg"
+          link="https://bechbox.com"
         />
       </div>
     </div>
