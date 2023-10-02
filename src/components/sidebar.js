@@ -74,6 +74,48 @@ const Sidebar = ({ selected }) => {
           </Link>
         ))}
       </div>
+      <h3>Connect</h3>
+      <div className="sidebar-menu">
+        <Link key="contact" className="sidebar-menu-item" to="/contact">
+          <div className="menu-item">
+            <div className="menu-icon">
+              <img src={ContactIcon} alt="contact" />
+            </div>
+            <div className="menu-title">Contact</div>
+          </div>
+          <div></div>
+        </Link>
+        <a
+          key="linkedin"
+          className="sidebar-menu-item"
+          href="https://www.linkedin.com/in/bechbox/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="menu-item">
+            <div className="menu-icon">
+              <img src={LinkedInIcon} alt="linkedin" />
+            </div>
+            <div className="menu-title">LinkedIn</div>
+          </div>
+          <div></div>
+        </a>
+        <a
+          key="twitter"
+          className="sidebar-menu-item"
+          href="https://twitter.com/bechbox"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="menu-item">
+            <div className="menu-icon">
+              <img src={TwitterIcon} alt="twitter" />
+            </div>
+            <div className="menu-title">Twitter</div>
+          </div>
+          <div></div>
+        </a>
+      </div>
     </div>
   )
 }
