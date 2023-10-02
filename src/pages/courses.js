@@ -3,12 +3,27 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Card from "../components/ui/card"
 
 const CoursesPage = () => (
   <Layout currentPage="/courses">
     <div>
       <h1>Courses</h1>
       <div className="subTitle">Intro text</div>
+      <div className="cards">
+        <Card
+          title="Generative AI image making"
+          subTitle="Online version of course thaught at The Danish Union of Journalists - Media & Communications"
+          image="/images/startups/emento.jpg"
+          link="https://learning.bechbox.com"
+        />
+        <Card
+          title="Design leadership for doctors"
+          subTitle="Twice a year I teact at the Faculty of Health, University of Aarhus"
+          image="/images/startups/emento.jpg"
+          link="https://health.au.dk/"
+        />
+      </div>
     </div>
   </Layout>
 )
