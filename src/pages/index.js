@@ -15,7 +15,7 @@ const IndexPage = () => (
       <h1>Product. Design. Startup.</h1>
       <div className="subTitle">
         “The best way to predict the future is to invent it”, someone ...
-        perhaps Allan Kay, said once. I’m a firm believer the best way to learn
+        perhaps Allan Kay, said once. I'm a firm believer the best way to learn
         about the world is to build tools for people to use.
       </div>
       <div className="cv">
@@ -38,7 +38,7 @@ const IndexPage = () => (
             <img src={WrenchIcon} alt="house icon" />
           </div>
           <div className="cv-title">
-            Service Design, UI Design, JAMstack, Data Science, Photography
+            Service Design, UI Design, JAMstack, Data Science, Photography, 3D
           </div>
         </div>
         <div className="cv-item">

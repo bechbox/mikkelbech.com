@@ -8,7 +8,14 @@ const GuitarPage = () => (
   <Layout currentPage="/guitar">
     <div>
       <h1>Guitar</h1>
-      <div className="subTitle">Intro text</div>
+      <div className="subTitle">
+        Since the age of 10 I wanted to become a guitarist ... and I'm still
+        trying 🤡
+      </div>
+      <p>
+        I promise within long on this page there will be more info about my
+        guitar passion and maybe even some videos of me playing
+      </p>
     </div>
   </Layout>
 )

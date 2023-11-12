@@ -1,0 +1,32 @@
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $primary;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.link-list a {
+  background-color: $dark-alt;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: $dark-alt-hover;
+  }
+}

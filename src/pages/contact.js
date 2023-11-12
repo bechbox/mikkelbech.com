@@ -8,7 +8,10 @@ const ContactPage = () => (
   <Layout currentPage="/contact">
     <div>
       <h1>Contact</h1>
-      <div className="subTitle">Intro text</div>
+      <div className="subTitle">
+        Hit me up on email:{" "}
+        <a href="mailto:mikkel@bechbox.dk">mikkel@bechbox.dk</a>
+      </div>
     </div>
   </Layout>
 )

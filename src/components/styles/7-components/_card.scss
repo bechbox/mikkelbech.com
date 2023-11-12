@@ -20,7 +20,10 @@ a.card {
   width: calc(50% - ($card-gap / 2));
   max-width: 505px;
   min-width: 365px;
-  background-color: #333;
+  background-color: $dark-alt;
+  &:hover {
+    background-color: $dark-alt-hover;
+  }
   height: 365px;
   border-radius: 12px;
   overflow: hidden;
@@ -32,7 +35,6 @@ a.card {
 }
 
 .card-footer {
-  background-color: $dark-alt;
   height: 91px;
   padding-left: 24px;
   display: flex;

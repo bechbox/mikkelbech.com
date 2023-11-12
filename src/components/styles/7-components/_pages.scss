@@ -8,6 +8,10 @@ main h1 {
   max-width: 60%;
 }
 
+p {
+  @include text-white();
+}
+
 .cv {
   margin-top: 48px;
   display: flex;
