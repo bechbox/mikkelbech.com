@@ -8,19 +8,27 @@ const DevPage = () => (
   <Layout currentPage="/dev">
     <div className="narrow">
       <h1>Dev</h1>
-      <div className="subTitle">Gatsby</div>
-      I've been exploring Static Site Generators with Gatsby and have built a
-      number of sites for myself and for others with Gatsby and Contentful:
-      <br />
+      <div className="subTitle">Web</div>
+      <p>
+        I really like the idea of Static Site Generation for websites because of
+        reliability and most importantly speed! The speed of the website is a
+        bare necesity for a great user experience and many many websites get
+        this wrong.
+      </p>
+      <p>
+        I've been exploring Static Site Generators with Gatsby (a React
+        framework) and have built a number of sites for myself and for others
+        with Gatsby and Contentful:
+      </p>
       <div className="link-list">
-        <a
-          href="https://bechbox.com/"
+        <Link
+          to="https://bechbox.com/"
           title="BechBox website"
           target="_blank"
           rel="noreferrer"
         >
           bechbox.com
-        </a>
+        </Link>
         <a
           href="https://emento.dk/"
           title="Emento website"

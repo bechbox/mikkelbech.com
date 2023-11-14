@@ -13,13 +13,13 @@ const CoursesPage = () => (
       <div className="cards">
         <Card
           title="Generative AI image making"
-          subTitle="Online version of course thaught at The Danish Union of Journalists - Media & Communications"
-          image="/images/startups/emento.jpg"
+          subTitle="Online version of course taught at The Danish Union of Journalists - Media & Communications"
+          image="/images/misc/ai_webinar.jpg"
           link="https://learning.bechbox.com"
         />
         <Card
           title="Design leadership for doctors"
-          subTitle="Twice a year I teact at the Faculty of Health, University of Aarhus"
+          subTitle="Twice a year I teach Leadership and Change Management at the Faculty of Health, University of Aarhus"
           image="/images/startups/emento.jpg"
           link="https://health.au.dk/"
         />
