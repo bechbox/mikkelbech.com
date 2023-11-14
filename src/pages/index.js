@@ -7,6 +7,7 @@ import EduIcon from "../../static/icons/regular/student.svg"
 import HouseIcon from "../../static/icons/regular/house-line.svg"
 import WrenchIcon from "../../static/icons/regular/wrench.svg"
 import CodeIcon from "../../static/icons/regular/code-simple.svg"
+import { Link } from "gatsby"
 
 const IndexPage = () => (
   <Layout currentPage="/">
@@ -17,7 +18,13 @@ const IndexPage = () => (
         perhaps Allan Kay, said once. I'm a firm believer the best way to learn
         about the world is to build tools for people to use.
       </div>
-      <p></p>
+      <p className="intro">
+        Welcome to my little corner of the internet! With a background in
+        Computer Science I've built a lot of products and started a{" "}
+        <Link to="/startups">handful of companies</Link>. I'm not really a
+        developer though! Service Design, empathy and strong UX/UI skills have
+        been the primary weapons for the last more than 20 years of my carreer.
+      </p>
       <div className="cv">
         <div className="cv-item">
           <div className="cv-icon">

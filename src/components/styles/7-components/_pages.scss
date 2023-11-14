@@ -38,3 +38,8 @@ p {
 .cv-title {
   @include text-white();
 }
+
+.intro {
+  margin-top: 48px;
+  max-width: 800px;
+}

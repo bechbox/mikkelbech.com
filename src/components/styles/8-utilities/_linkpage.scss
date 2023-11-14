@@ -1,0 +1,112 @@
+$light: #eee;
+
+.links {
+  background-color: $dark;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $light;
+  @include font-body();
+}
+
+.links h1 {
+  font-size: 2.4em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  color: $light;
+}
+
+.links p {
+  margin: 12px 0 0 0;
+  color: $light;
+}
+
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+
+  max-width: 430px;
+  padding: 64px 24px 24px 24px;
+}
+
+.avatar-xl {
+  width: 192px;
+  min-width: 192px;
+  height: 192px;
+  min-height: 192px;
+
+  overflow: hidden;
+  border-radius: 192px;
+  border: 4px solid #666;
+}
+
+.avatar-xl img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.links-description {
+  text-align: center;
+}
+
+.link-card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.link-card-list > a {
+  color: $light;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  &:hover {
+    background-color: #333;
+  }
+}
+
+.link-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #222;
+  margin: 0;
+  padding: 0 32px 0 32px;
+  border-radius: 12px;
+}
+
+.social-card-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.social-card {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-color: #222;
+
+  display: grid;
+  place-items: center;
+
+  &:hover {
+    background-color: #333;
+  }
+}
+
+.social-card > img {
+  width: 60%;
+  filter: $lightgrey-filter;
+}
