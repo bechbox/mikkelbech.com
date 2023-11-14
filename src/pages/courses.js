@@ -7,7 +7,7 @@ import Card from "../components/ui/card"
 
 const CoursesPage = () => (
   <Layout currentPage="/courses">
-    <div>
+    <div className="narrow">
       <h1>Courses</h1>
       <div className="subTitle">Intro text</div>
       <div className="cards">

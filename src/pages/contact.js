@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 
 const ContactPage = () => (
   <Layout currentPage="/contact">
-    <div>
+    <div className="narrow">
       <h1>Contact</h1>
       <div className="subTitle">
         Hit me up on email:{" "}

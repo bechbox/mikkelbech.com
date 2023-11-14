@@ -1,17 +1,50 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const ThoughtsPage = () => (
-  <Layout currentPage="/thoughts">
-    <div>
-      <h1>Thoughts</h1>
-      <div className="subTitle">Intro text</div>
-    </div>
-  </Layout>
-)
+const ThoughtsPage = ({ data }) => {
+  const posts = data.allMarkdownRemark.edges
+
+  return (
+    <Layout currentPage="/thoughts">
+      <div>
+        <h1>Thoughts</h1>
+        <div className="subTitle">
+          Just some random thoughts from time to time
+        </div>
+        <div className="blog-post-list">
+          {posts.map(({ node }) => (
+            <div className="blog-post" key={node.id}>
+              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>,{" "}
+              {node.frontmatter.date}
+            </div>
+          ))}
+        </div>
+      </div>
+    </Layout>
+  )
+}
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+          }
+        }
+      }
+    }
+  }
+`
 
 /**
  * Head export to define metadata for the page

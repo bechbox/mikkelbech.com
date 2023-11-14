@@ -7,7 +7,7 @@ import Card from "../components/ui/card"
 
 const ServiceDesignPage = () => (
   <Layout currentPage="/service-design">
-    <div>
+    <div className="narrow">
       <h1>Service Design</h1>
       <div className="subTitle">
         Service design embodies empathy and innovation, turning user needs into

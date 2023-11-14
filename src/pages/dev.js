@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 
 const DevPage = () => (
   <Layout currentPage="/dev">
-    <div>
+    <div className="narrow">
       <h1>Dev</h1>
       <div className="subTitle">Gatsby</div>
       I've been exploring Static Site Generators with Gatsby and have built a
@@ -70,7 +70,7 @@ const DevPage = () => (
           learning.bechbox.com
         </a>
       </div>
-      <div className="subTitle">Small projects</div>
+      <div className="subTitle">Experiments</div>
       <p>
         <a
           href="https://playground.bechbox.com/"

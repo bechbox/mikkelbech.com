@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 
 const GuitarPage = () => (
   <Layout currentPage="/guitar">
-    <div>
+    <div className="narrow">
       <h1>Guitar</h1>
       <div className="subTitle">
         Since the age of 10 I wanted to become a guitarist ... and I'm still

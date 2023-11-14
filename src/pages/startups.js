@@ -7,7 +7,7 @@ import Card from "../components/ui/card"
 
 const StartupPage = () => (
   <Layout currentPage="/startups">
-    <div>
+    <div className="narrow">
       <h1>Startups</h1>
       <div className="subTitle">
         I've co-founded quite a number of companies. Most noteworthy:

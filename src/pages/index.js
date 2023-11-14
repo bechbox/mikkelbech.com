@@ -11,7 +11,7 @@ import CodeIcon from "../../static/icons/regular/code-simple.svg"
 
 const IndexPage = () => (
   <Layout currentPage="/">
-    <div>
+    <div className="narrow">
       <h1>Product. Design. Startup.</h1>
       <div className="subTitle">
         “The best way to predict the future is to invent it”, someone ...
