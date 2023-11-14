@@ -8,7 +8,7 @@ const BlogPostTemplate = ({ data }) => {
 
   return (
     <Layout currentPage="/thoughts">
-      <div className="blog">
+      <div className="blog narrow">
         <h1>{title}</h1>
         <p>{date}</p>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
