@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 const Card = ({ title, subTitle, image, link }) => {
   return (
-    <a href={link} className="card" target="_blank">
+    <a href={link} className="card" target="_blank" rel="noreferrer">
       <div className="card-image">
         <img src={image} alt={title} />
       </div>

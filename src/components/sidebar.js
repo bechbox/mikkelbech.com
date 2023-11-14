@@ -14,20 +14,24 @@ import LinkedInIcon from "../../static/icons/regular/linkedin-logo.svg"
 import TwitterIcon from "../../static/icons/regular/twitter-logo.svg"
 
 const Sidebar = ({ selected }) => {
-  const menuItems = [
-    { key: "1", path: "/", icon: InfoIcon, title: "Introduction" },
-    { key: "2", path: "/startups", icon: FactoryIcon, title: "Startups" },
-    {
-      key: "3",
-      path: "/service-design",
-      icon: UsersIcon,
-      title: "Service Design",
-    },
-    { key: "4", path: "/courses", icon: CoursesIcon, title: "Courses" },
-    { key: "5", path: "/thoughts", icon: BulbIcon, title: "Thoughts" },
-    { key: "6", path: "/dev", icon: DevIcon, title: "Dev" },
-    { key: "7", path: "/guitar", icon: GuitarIcon, title: "Guitar" },
-  ]
+  const menuItems = React.useMemo(
+    () => [
+      { key: "1", path: "/", icon: InfoIcon, title: "Introduction" },
+      { key: "2", path: "/startups", icon: FactoryIcon, title: "Startups" },
+      {
+        key: "3",
+        path: "/service-design",
+        icon: UsersIcon,
+        title: "Service Design",
+      },
+      { key: "4", path: "/courses", icon: CoursesIcon, title: "Courses" },
+      { key: "5", path: "/thoughts", icon: BulbIcon, title: "Thoughts" },
+      { key: "6", path: "/dev", icon: DevIcon, title: "Dev" },
+      { key: "7", path: "/guitar", icon: GuitarIcon, title: "Guitar" },
+    ],
+    []
+  ) // Empty dependency array means this only runs once
+
   // Sidebar shortcuts
   React.useEffect(() => {
     const down = e => {
@@ -39,7 +43,7 @@ const Sidebar = ({ selected }) => {
 
     document.addEventListener("keydown", down)
     return () => document.removeEventListener("keydown", down)
-  }, [menuItems])
+  }, [menuItems]) // Dependencies now correctly include the memoized menuItems
 
   return (
     <div className="sidebar">
