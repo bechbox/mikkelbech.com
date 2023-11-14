@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -18,6 +17,7 @@ const IndexPage = () => (
         perhaps Allan Kay, said once. I'm a firm believer the best way to learn
         about the world is to build tools for people to use.
       </div>
+      <p></p>
       <div className="cv">
         <div className="cv-item">
           <div className="cv-icon">

@@ -6,7 +6,6 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import CommandMenu from "./commandMenu"
 
 // Supports weights 100-900
@@ -23,16 +22,6 @@ const Layout = ({ currentPage, children }) => {
     // Once the component is mounted, set the commandMenu state.
     setCommandMenu(<CommandMenu element={containerElement.current} />)
   }, []) // Empty dependency array means this effect runs once after initial render.
-
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
