@@ -10,6 +10,10 @@
   top: 0;
 
   letter-spacing: 0.02em;
+
+  @include sm {
+    display: none;
+  }
 }
 
 .sidebar-header {

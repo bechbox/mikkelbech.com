@@ -70,14 +70,29 @@ const DevPage = () => (
           mikkelbech.com
         </a>
         <a
-          href="https://learning.bechbox.com/"
-          title="BechBox Learning"
+          href="https://blackboxpedals.com"
+          title="BlackBox Pedals"
           target="_blank"
           rel="noreferrer"
         >
-          learning.bechbox.com
+          blackboxpedals.com
         </a>
       </div>
+      <div className="subTitle">Tools</div>
+      <p>
+        <a
+          href="https://promptbuilder.bechbox.com/"
+          title="Additive Prompt Builder"
+          target="_blank"
+          rel="noreferrer"
+          className="dev-link"
+        >
+          <img
+            src="https://promptbuilder.bechbox.com/images/promptbuilder_web_preview.jpg"
+            alt="Additive Promptbuilder"
+          />
+        </a>
+      </p>
       <div className="subTitle">Experiments</div>
       <p>
         <a
