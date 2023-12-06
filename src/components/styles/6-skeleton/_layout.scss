@@ -11,6 +11,10 @@
 main {
   padding: 100px 52px 100px 52px;
   width: 100%;
+
+  @include sm {
+    padding: 100px 32px 100px 32px;
+  }
 }
 
 .narrow {
