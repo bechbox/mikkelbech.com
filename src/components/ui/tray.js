@@ -10,7 +10,7 @@ const MobileMenu = () => {
 
   const toggleMenu = () => {
     if (!isOpen) {
-      setIsFullyClosed(false) // Will be fully closed only after transition
+      setIsFullyClosed(false) //  Will be fully closed only after transition
     } else {
       setTimeout(() => {
         setIsFullyClosed(true)
