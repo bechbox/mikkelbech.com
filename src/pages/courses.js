@@ -8,7 +8,9 @@ const CoursesPage = () => (
   <Layout currentPage="/courses">
     <div className="narrow">
       <h1>Courses</h1>
-      <div className="subTitle">Intro text</div>
+      <div className="subTitle">
+        I enjoy teaching and passing on some of the knowledge I picked up
+      </div>
       <div className="cards">
         <Card
           title="Generative AI image making"

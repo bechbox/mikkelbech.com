@@ -13,6 +13,7 @@ import "@fontsource-variable/inter"
 import "./styles/main.scss"
 
 import Sidebar from "./sidebar"
+import MobileMenu from "./ui/tray"
 
 const Layout = ({ currentPage, children }) => {
   const containerElement = React.useRef(null)
@@ -27,6 +28,7 @@ const Layout = ({ currentPage, children }) => {
     <>
       <div className="layout">
         <Sidebar selected={currentPage} />
+        <MobileMenu />
         <main>{children}</main>
       </div>
       <div className="vercel" ref={containerElement}></div>

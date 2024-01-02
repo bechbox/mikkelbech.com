@@ -1,3 +1,10 @@
+$gutter: 52px;
+$mobile-gutter: 32px;
+
+body {
+  background-color: $dark;
+}
+
 .layout {
   background-color: $dark;
   display: flex;
@@ -6,17 +13,25 @@
 
   @include font-body();
   @include text();
+
+  @include sm {
+    display: block;
+  }
 }
 
 main {
-  padding: 100px 52px 100px 52px;
+  padding: 100px $gutter 100px $gutter;
   width: 100%;
 
   @include sm {
-    padding: 100px 32px 100px 32px;
+    padding: 40px $mobile-gutter 100px $mobile-gutter;
   }
 }
 
 .narrow {
   max-width: 1200px;
+
+  @include sm {
+    max-width: 366px;
+  }
 }

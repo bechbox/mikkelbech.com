@@ -27,6 +27,10 @@ a.card {
   height: 365px;
   border-radius: 12px;
   overflow: hidden;
+
+  @include sm {
+    height: 385px;
+  }
 }
 
 .card-image {
@@ -44,9 +48,14 @@ a.card {
 .card-footer {
   height: 91px;
   padding-left: 24px;
+  padding-right: 24px;
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @include sm {
+    height: 101px;
+  }
 }
 
 .card-info {
