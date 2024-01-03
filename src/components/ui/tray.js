@@ -40,7 +40,7 @@ const MobileMenu = () => {
         >
           <div className="menu-content">
             <div className="menu-header">
-              <h3>Options</h3>
+              <h3>Menu</h3>
             </div>
             <div className="menu-items">
               {menuItems.map(item => (
