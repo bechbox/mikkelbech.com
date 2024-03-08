@@ -15,6 +15,10 @@ p {
 
 hr {
   border-top: 1px solid var(--stroke);
+  border-bottom: 1px solid var(--bg);
+  border-right: none;
+  border-left: none;
+  background-color: var(--bg);
   height: 0px;
   margin: 48px 0 48px 0;
   padding: 0;

@@ -4,13 +4,15 @@ import Layout from "../components/layout"
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark
-  const { title, date } = post.frontmatter
+  const { title, date, author } = post.frontmatter
 
   return (
     <Layout currentPage="/thoughts">
       <div className="blog narrow">
         <h1>{title}</h1>
-        <p>{date}</p>
+        <p>
+          {date}, by {author}
+        </p>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
