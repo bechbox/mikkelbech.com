@@ -7,6 +7,7 @@ import menuItems from "../data/menuItems"
 import ContactIcon from "../../static/icons/regular/chat-centered-dots.svg"
 import LinkedInIcon from "../../static/icons/regular/linkedin-logo.svg"
 import TwitterIcon from "../../static/icons/regular/twitter-logo.svg"
+import DarkLightToggle from "./ui/DarkLightToggle"
 
 const Sidebar = ({ selected }) => {
   // Sidebar shortcuts
@@ -96,6 +97,9 @@ const Sidebar = ({ selected }) => {
           </div>
           <div></div>
         </a>
+      </div>
+      <div className="theme-switcher">
+        <DarkLightToggle />
       </div>
     </div>
   )

@@ -2,17 +2,18 @@ $gutter: 52px;
 $mobile-gutter: 32px;
 
 body {
-  background-color: $dark;
+  background-color: var(--bg);
 }
 
 .layout {
-  background-color: $dark;
+  background-color: var(--bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 
   @include font-body();
-  @include text();
+  color: var(--text);
 
   @include sm {
     display: block;

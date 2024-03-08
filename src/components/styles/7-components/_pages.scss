@@ -5,10 +5,19 @@ main h1 {
 .subTitle {
   @include font-size(22px);
   margin: 0;
+  color: var(--text-subtle);
 }
 
 p {
-  @include text-white();
+  color: var(--text-on);
+  line-height: 150%;
+}
+
+hr {
+  border-top: 1px solid var(--stroke);
+  height: 0px;
+  margin: 48px 0 48px 0;
+  padding: 0;
 }
 
 .cv {
@@ -36,12 +45,13 @@ p {
 }
 
 .cv-title {
-  @include text-white();
+  color: var(--text-on);
 }
 
 .intro {
-  margin-top: 48px;
   max-width: 800px;
+  margin: 0;
+  padding: 0;
 }
 
 .dev-link > img {

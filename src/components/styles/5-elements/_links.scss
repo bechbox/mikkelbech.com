@@ -1,10 +1,10 @@
 a {
-  color: $primary;
+  color: var(--link);
   text-decoration: none;
 }
 
 a:visited {
-  color: $primary;
+  color: var(--link);
 }
 
 .link-list {
@@ -21,18 +21,18 @@ a:visited {
 }
 
 .link-list a {
-  background-color: $dark-button;
+  background-color: var(--bg-card);
   width: 300px;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--text-on);
   border-radius: 8px;
   font-weight: bold;
 
   &:hover {
-    background-color: $dark-button-hover;
+    background-color: var(--bg-card-hover);
   }
 
   @include sm {

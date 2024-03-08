@@ -1,9 +1,8 @@
 import React, { useEffect } from "react"
-import { useLocalStorage } from "./useLocalStorage"
+import { useLocalStorage } from "../utils/useLocalStorage"
 
-import "../styles/darkToggleButton.scss"
-import { ReactComponent as SunIcon } from "../../../static/icons/regular/sun.svg"
-import { ReactComponent as MoonIcon } from "../../../static/icons/regular/moon.svg"
+import SunIcon from "../../../static/icons/regular/sun.svg"
+import MoonIcon from "../../../static/icons/regular/moon.svg"
 
 export default function DarkLightToggle() {
   const [checked, setChecked] = useLocalStorage("checked", false)
@@ -34,8 +33,8 @@ export default function DarkLightToggle() {
         onChange={e => handleChange(e)}
       />
       <label htmlFor="darkmode-toggle">
-        <SunIcon className="sun" />
-        <MoonIcon className="moon" />
+        <img src={SunIcon} alt="twitter" className="sun" />
+        <img src={MoonIcon} alt="twitter" className="moon" />
       </label>
     </div>
   )

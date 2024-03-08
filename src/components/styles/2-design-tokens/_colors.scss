@@ -1,12 +1,53 @@
-$white: #ffffff;
-$dark: #121212;
-$dark-alt: #191919;
-$dark-alt-hover: #242424;
-$dark-stroke: #2d2d2d;
-$dark-button: #282828;
-$dark-button-hover: #535353;
-$lightgrey: #7f7f7f;
-$primary: #eb5000;
+$themes: (
+  light: (
+    bg: #ffffff,
+    bg-alt: #ffffff,
+    bg-alt-hover: #dcdcdc,
+    stroke: #e5e5e5,
+    bg-button: #444444,
+    bg-button-hover: #747474,
+    bg-selected: #f1f1f1,
+    bg-card: #f6f6f6,
+    bg-card-hover: #ececec,
+    border-card: rgba(225, 228, 235, 0.8),
+    text-selected: #2a2a2a,
+    text: #111111,
+    text-on: #3b3d41,
+    text-subtle: #a0a5ac,
+    link: #eb5000,
+    filter-on: invert(0%) sepia(100%) saturate(14%) hue-rotate(22deg)
+      brightness(95%) contrast(102%),
+    filter-subtle: invert(53%) sepia(1%) saturate(0%) hue-rotate(55deg)
+      brightness(93%) contrast(89%),
+    shadow-8:
+      "0px 2px 4px -1px rgba(0, 0, 0, 0.12), 0px 8px 16px 1px rgba(0, 0, 0, 0.12)",
+    filter-8: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.08)),
+  ),
+  dark: (
+    bg: #121212,
+    bg-alt: #191919,
+    bg-alt-hover: #242424,
+    stroke: #2d2d2d,
+    bg-button: #282828,
+    bg-button-hover: #535353,
+    bg-selected: #212121,
+    bg-card: #191919,
+    border-card: #191919,
+    bg-card-hover: #242424,
+    text-selected: #bebebe,
+    text: #7f7f7f,
+    text-on: #ffffff,
+    text-subtle: #666666,
+    link: #eb5000,
+    filter-on: invert(99%) sepia(92%) saturate(5%) hue-rotate(208deg)
+      brightness(105%) contrast(100%),
+    filter-subtle: invert(53%) sepia(1%) saturate(0%) hue-rotate(55deg)
+      brightness(93%) contrast(89%),
+    shadow-8:
+      "0px 2px 4px -1px rgba(0, 0, 0, 0.12), 0px 8px 16px 1px rgba(0, 0, 0, 0.12)",
+    filter-8: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.08)),
+  ),
+);
 
 $selected-bg: #555555;
 $selected-text: #bebebe;
@@ -14,10 +55,22 @@ $selected-text: #bebebe;
 $lightgrey-filter: invert(53%) sepia(1%) saturate(0%) hue-rotate(55deg)
   brightness(93%) contrast(89%);
 
-@mixin text-white() {
-  color: $white;
+$white-filter: invert(99%) sepia(92%) saturate(5%) hue-rotate(208deg)
+  brightness(105%) contrast(100%);
+
+@mixin apply-theme($theme-name) {
+  $theme-map: map-get($themes, $theme-name);
+  @each $property, $value in $theme-map {
+    --#{$property}: #{$value};
+  }
 }
 
-@mixin text() {
-  color: $lightgrey;
+// Default theme
+:root {
+  @include apply-theme(light);
+}
+
+// Dark theme overrides
+[data-theme="dark"] {
+  @include apply-theme(dark);
 }

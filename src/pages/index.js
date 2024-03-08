@@ -18,6 +18,7 @@ const IndexPage = () => (
         perhaps Allan Kay, said once. I'm a firm believer the best way to learn
         about the world is to build tools for people to use.
       </div>
+      <hr />
       <p className="intro">
         Welcome to my little corner of the internet! With a background in
         Computer Science I've built a lot of products and started a{" "}

@@ -1,9 +1,9 @@
 .sidebar {
-  background-color: $dark-alt;
+  background-color: var(--bg-alt);
   width: 290px;
   min-width: 290px;
   height: 100vh;
-  border-right: 1px solid $dark-stroke;
+  border-right: 1px solid var(--stroke);
 
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -76,7 +76,7 @@
 .sidebar-header-content > p {
   margin: 0;
   padding: 0;
-  @include text();
+  color: var(--text-subtle);
 }
 
 .sidebar-menu {
@@ -100,11 +100,11 @@ a.sidebar-menu-item {
   border-radius: 4px;
 
   text-decoration: none;
-  @include text();
+  color: var(--text);
   cursor: pointer;
 
   &:hover {
-    background-color: $selected-bg;
+    background-color: var(--bg-selected);
   }
 }
 
@@ -116,34 +116,38 @@ a.sidebar-menu-item {
 }
 
 .menu-selected {
-  background-color: $selected-bg;
+  background-color: var(--bg-selected);
 }
 
 .menu-selected .menu-title {
-  color: $selected-text;
+  color: var(--text-selected);
 }
 
 .menu-icon {
   width: 24px;
   height: 24px;
   overflow: hidden;
-  filter: $lightgrey-filter;
+  filter: var(--filter-subtle);
 }
 
 .menu-shortcut {
   padding: 4px 10px 4px 10px;
   border-radius: 4px;
-  border: 1px solid #2d2d2d;
+  border: 1px solid var(--stroke);
 }
 
 .menu-selected .menu-shortcut {
-  border: 1px solid #616161;
+  border: 1px solid var(--stroke);
 }
 
 .sidebar h3 {
   margin: 48px 0 24px 30px;
   font-weight: 500;
   text-transform: uppercase;
-  @include text();
+  color: var(--text);
   @include font-size(12px);
+}
+
+.theme-switcher {
+  margin: 28px 24px 46px 24px;
 }

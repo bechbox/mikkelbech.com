@@ -8,6 +8,7 @@ const DevPage = () => (
   <Layout currentPage="/dev">
     <div className="narrow">
       <h1>Dev</h1>
+      <hr />
       <div className="subTitle">Web</div>
       <p>
         I really like the idea of Static Site Generation for websites because of
@@ -77,7 +78,32 @@ const DevPage = () => (
         >
           blackboxpedals.com
         </a>
+        <a
+          href="https://makeaguide.dk"
+          title="Guide"
+          target="_blank"
+          rel="noreferrer"
+        >
+          makeaguide.dk
+        </a>
+        <a
+          href="https://emento.design"
+          title="Emento Design"
+          target="_blank"
+          rel="noreferrer"
+        >
+          emento.design
+        </a>
+        <a
+          href="https://brand.emento.dk"
+          title="Emento Brand Book"
+          target="_blank"
+          rel="noreferrer"
+        >
+          brand.emento.dk
+        </a>
       </div>
+      <hr />
       <div className="subTitle">Tools</div>
       <p>
         <a
@@ -90,9 +116,11 @@ const DevPage = () => (
           <img
             src="https://promptbuilder.bechbox.com/images/promptbuilder_web_preview.jpg"
             alt="Additive Promptbuilder"
+            className="img-shadow"
           />
         </a>
       </p>
+      <hr />
       <div className="subTitle">Experiments</div>
       <p>
         <a
