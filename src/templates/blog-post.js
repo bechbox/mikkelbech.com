@@ -1,13 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark
-  const { title, date, author } = post.frontmatter
+  const { title, date, author, slug } = post.frontmatter
+
+  const Head = () => <Seo title={title} url={slug} type="article" />
 
   return (
     <Layout currentPage="/thoughts">
+      <Head />
       <div className="blog narrow">
         <h1>{title}</h1>
         <p>

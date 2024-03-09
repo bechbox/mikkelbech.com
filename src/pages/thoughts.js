@@ -51,6 +51,6 @@ export const query = graphql`
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Thoughts" />
+export const Head = () => <Seo title="Thoughts" url="/thoughts" />
 
 export default ThoughtsPage

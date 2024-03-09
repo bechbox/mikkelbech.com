@@ -85,6 +85,6 @@ const LinkPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Mikkel Bech" />
+export const Head = () => <Seo title="Mikkel Bech" url="/links" />
 
 export default LinkPage

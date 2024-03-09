@@ -52,6 +52,6 @@ const StartupPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Startups" />
+export const Head = () => <Seo title="Startups" url="startups" />
 
 export default StartupPage

@@ -32,6 +32,6 @@ const ServiceDesignPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Service Design" />
+export const Head = () => <Seo title="Service Design" url="/service-design" />
 
 export default ServiceDesignPage
