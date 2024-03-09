@@ -7,11 +7,8 @@ const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark
   const { title, date, author, slug } = post.frontmatter
 
-  const Head = () => <Seo title={title} url={slug} type="article" />
-
   return (
     <Layout currentPage="/thoughts">
-      <Head />
       <div className="blog narrow">
         <h1>{title}</h1>
         <p>
@@ -34,5 +31,16 @@ export const query = graphql`
     }
   }
 `
+
+export const Head = ({ data }) => {
+  const post = data.markdownRemark
+  return (
+    <Seo
+      title={post.frontmatter.title}
+      url={post.frontmatter.slug}
+      type="article"
+    />
+  )
+}
 
 export default BlogPostTemplate

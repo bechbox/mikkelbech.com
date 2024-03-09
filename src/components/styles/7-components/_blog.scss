@@ -11,3 +11,11 @@
 .blog img {
   max-width: 100%;
 }
+
+pre {
+  background-color: var(--bg-card);
+  color: var(--text-code);
+  padding: 16px;
+  border: 1px solid var(--border-card);
+  border-radius: 4px;
+}
