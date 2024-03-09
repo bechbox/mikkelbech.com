@@ -150,4 +150,9 @@ a.sidebar-menu-item {
 
 .theme-switcher {
   margin: 28px 24px 46px 24px;
+
+  @include sm {
+    display: none;
+    visibility: hidden;
+  }
 }

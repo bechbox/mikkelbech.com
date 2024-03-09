@@ -21,7 +21,7 @@ $transition: all #{$speed} cubic-bezier(0.165, 0.84, 0.44, 1);
 
   .menu-button-wrapper {
     width: min-content;
-    background-color: black;
+    background-color: var(--bg-button-alt);
     border-radius: 36px;
     width: 48px;
     height: 48px;
@@ -43,7 +43,7 @@ $transition: all #{$speed} cubic-bezier(0.165, 0.84, 0.44, 1);
 
   .tray {
     background: white;
-    width: calc(100% - (2 * $mobile-gutter));
+    width: calc(100% - (1 * $mobile-gutter));
     border-radius: 24px;
     transition: $transition;
     transform: translateY(100%); // Start hidden below the page
