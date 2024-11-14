@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState, useRef } from "react"
 import menuItems from "../../data/menuItems"
 import burger from "../../../static/icons/regular/list.svg"
 import { Link } from "gatsby"

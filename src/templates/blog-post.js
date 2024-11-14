@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark
-  const { title, date, author, slug } = post.frontmatter
+  const { title, date, author } = post.frontmatter
 
   return (
     <Layout currentPage="/thoughts">
