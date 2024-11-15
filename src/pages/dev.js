@@ -107,6 +107,21 @@ const DevPage = () => (
       <div className="subTitle">Tools</div>
       <p>
         <a
+          href="https://backdroptext.bechbox.com/"
+          title="BackdropText"
+          target="_blank"
+          rel="noreferrer"
+          className="dev-link"
+        >
+          <img
+            src="https://backdroptext.bechbox.com/images/backdroptext_web_preview.jpg"
+            alt="BackdropText"
+            className="img-shadow"
+          />
+        </a>
+      </p>
+      <p>
+        <a
           href="https://promptbuilder.bechbox.com/"
           title="Additive Prompt Builder"
           target="_blank"
