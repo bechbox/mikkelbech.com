@@ -22,7 +22,7 @@ const IndexPage = () => (
       <p className="intro">
         Welcome to my little corner of the internet! With a background in
         Computer Science I've built a lot of products and started a{" "}
-        <Link to="/startups">handful of companies</Link>. I'm not really a
+        <Link to="/startups">handful of companies</Link>. I'm not only a
         developer though! Service Design, empathy and strong UX/UI skills have
         been the primary weapons for the last more than 20 years of my carreer.
       </p>
